@@ -1,0 +1,16 @@
+{
+    "name": "petflow/polytalk",
+    "authors": [
+        {
+            "name": "andruu",
+            "email": "andru.weir@gmail.com"
+        }
+    ],
+    "description": "Protocol to communicate between languages.",
+    "keywords": ["socket", "protocol"],
+    "license": "MIT",
+    "require": {
+      "react/socket": "*",
+      "monolog/monolog": "*"
+    }
+}
