@@ -1,4 +1,0 @@
-[2012-11-17 14:32:29] name.INFO: {"class":"Model::Order","method":"findBySize","arguments":{"size":"small","limit":3}} [] []
-[2012-11-17 14:32:29] name.INFO: {"class":"Model::Order","method":"findBySize","arguments":{"size":"large","limit":3}} [] []
-[2012-11-17 14:32:29] name.INFO: {"class":"Model::Order","method":"findBySize","arguments":{"size":"small","limit":3}} [] []
-[2012-11-17 14:32:29] name.INFO: {"class":"Model::Order","method":"findBySize","arguments":{"size":"large","limit":3}} [] []
