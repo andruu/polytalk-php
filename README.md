@@ -19,16 +19,14 @@ arguments    | The arguments to inject into the method in key value pairs.
 The recommended way to install Polytalk is [through composer](http://getcomposer.org/).
 
 ```javascript
-{
-	"require": {
-   		"polytalk/polytalk": "dev-master"
-   	}
+"require": {
+  "polytalk/polytalk": "dev-master"
 }
 ```
     
 ## Server Example
 
-Be sure that any classes you want to be exposed by the server are included/required from the server.
+Be sure that any classes you want to be exposed by the server to the client are included/required from the server.
 
 ```php
 $server = new Polytalk\Server(['port' => 9090]);
