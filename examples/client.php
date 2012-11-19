@@ -17,6 +17,17 @@ $request = [
     ]
 ];
 
+// Return response
+$response = $client->call($request);
+var_dump($response);
+
+// Callback
+$first_order = $client->call($request, function ($response) {
+  return $response[0];
+});
+var_dump($first_order);
+
+
 $request2 = [
     'class' => 'Test',
     'method' => 'add',
