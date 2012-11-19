@@ -6,7 +6,7 @@ require __DIR__ . '/../lib/Polytalk/Response.php';
 require __DIR__ . '/../lib/Polytalk/Request.php';
 require __DIR__ . '/../lib/Polytalk/Client.php';
 
-$client  = new PolyTalk\Client(['port' => 9090]);
+$client  = new Polytalk\Client(['port' => 9090]);
 
 $request = [
     'class' => 'Model::Order',
