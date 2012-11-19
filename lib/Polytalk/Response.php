@@ -14,7 +14,7 @@ class Response {
   private $response;
 
   public function __construct ($response) {
-    if (is_string($response)) {
+    if (is_string($response) && (preg_match('/^{/', $response) || preg_match('/^\[{/', $response))) {
       $response = json_decode($response, true);
     }
     $this->response = $response;

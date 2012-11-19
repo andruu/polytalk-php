@@ -7,7 +7,6 @@ require __DIR__ . '/../lib/Polytalk/Request.php';
 require __DIR__ . '/../lib/Polytalk/Client.php';
 
 $client  = new PolyTalk\Client(['port' => 9090]);
-$client2  = new PolyTalk\Client(['port' => 9090]);
 
 $request = [
     'class' => 'Model::Order',
@@ -19,11 +18,19 @@ $request = [
 ];
 
 $request2 = [
-    'class' => 'Model::Order',
-    'method' => 'findBySize',
+    'class' => 'Test',
+    'method' => 'add',
     'arguments' => [
-        'size' => 'large',
-        'limit' => 3
+        'a' => 3,
+        'b' => 2
+    ]
+];
+
+$request3 = [
+    'class' => 'Test',
+    'method' => 'shout',
+    'arguments' => [
+        'words' => 'hello how are you doing?'
     ]
 ];
 
@@ -32,19 +39,14 @@ $response = $client->call($request);
 var_dump($response);
 
 // Callback
-$first_order = $client->call($request2, function ($response) {
+$first_order = $client->call($request, function ($response) {
   return $response[0];
 });
 
 var_dump($first_order);
 
-// Return response
-$response = $client2->call($request);
-var_dump($response);
+echo $client->call($request2), "\n";
+echo $client->call($request3), "\n";
 
-// Callback
-$first_order = $client2->call($request2, function ($response) {
-  return $response[0];
-});
 
-var_dump($first_order);
+

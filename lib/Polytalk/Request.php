@@ -14,7 +14,7 @@ class Request {
   private $request;
 
   public function __construct ($request) {
-    if (is_string($request)) {
+    if (is_string($request) && (preg_match('/^{/', $request) || preg_match('/^\[{/', $request))) {
       $request = json_decode($request, true);
     }
     $this->request = $request;

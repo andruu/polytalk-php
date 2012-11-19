@@ -1,5 +1,5 @@
 {
-    "hash": "8ce8234cd91f394804f525aef38ea836",
+    "hash": "ff2c1f284fd09c56bc0701d35bb13469",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -42,74 +42,18 @@
             ]
         },
         {
-            "name": "monolog/monolog",
-            "version": "1.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Seldaek/monolog",
-                "reference": "1.2.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/Seldaek/monolog/zipball/1.2.1",
-                "reference": "1.2.1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "mlehner/gelf-php": "1.0.*"
-            },
-            "suggest": {
-                "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
-                "ext-mongo": "Allow sending log messages to a MongoDB server"
-            },
-            "time": "2012-08-29 04:53:20",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-0": {
-                    "Monolog": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Logging for PHP 5.3",
-            "homepage": "http://github.com/Seldaek/monolog",
-            "keywords": [
-                "log",
-                "logging"
-            ]
-        },
-        {
             "name": "react/event-loop",
-            "version": "v0.2.3",
+            "version": "v0.2.4",
             "target-dir": "React/EventLoop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/event-loop",
-                "reference": "v0.2.3"
+                "reference": "v0.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/event-loop/archive/v0.2.3.zip",
-                "reference": "v0.2.3",
+                "url": "https://github.com/reactphp/event-loop/archive/v0.2.4.zip",
+                "reference": "v0.2.4",
                 "shasum": ""
             },
             "require": {
@@ -142,17 +86,17 @@
         },
         {
             "name": "react/socket",
-            "version": "v0.2.3",
+            "version": "v0.2.4",
             "target-dir": "React/Socket",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/socket",
-                "reference": "v0.2.3"
+                "reference": "v0.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/socket/archive/v0.2.3.zip",
-                "reference": "v0.2.3",
+                "url": "https://github.com/reactphp/socket/archive/v0.2.4.zip",
+                "reference": "v0.2.4",
                 "shasum": ""
             },
             "require": {
@@ -184,17 +128,17 @@
         },
         {
             "name": "react/stream",
-            "version": "v0.2.3",
+            "version": "v0.2.4",
             "target-dir": "React/Stream",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/stream",
-                "reference": "v0.2.3"
+                "reference": "v0.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/stream/archive/v0.2.3.zip",
-                "reference": "v0.2.3",
+                "url": "https://github.com/reactphp/stream/archive/v0.2.4.zip",
+                "reference": "v0.2.4",
                 "shasum": ""
             },
             "require": {
@@ -204,7 +148,7 @@
             "suggest": {
                 "react/event-loop": "0.2.*"
             },
-            "time": "2012-11-05 13:25:35",
+            "time": "2012-11-18 00:18:39",
             "type": "library",
             "extra": {
                 "branch-alias": {

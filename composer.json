@@ -10,7 +10,6 @@
     "keywords": ["socket", "protocol"],
     "license": "MIT",
     "require": {
-      "react/socket": "*",
-      "monolog/monolog": "*"
+      "react/socket": "*"
     }
 }

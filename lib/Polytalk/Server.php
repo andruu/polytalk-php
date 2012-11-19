@@ -11,8 +11,6 @@ namespace Polytalk;
 
 use Polytalk\Request;
 use Polytalk\Response;
-use Monolog\Logger;
-use Monolog\Handler\RotatingFileHandler;
 
 class Server {
 
@@ -35,9 +33,6 @@ class Server {
 
     $socket->on('connection', function ($connection) use ($callback) {
       $connection->on('data', function ($request) use ($connection, $callback) {
-        $log = new Logger('name');
-        $log->pushHandler(new RotatingFileHandler('tmp/info.log', Logger::INFO));
-        $log->addInfo($request);
         call_user_func($callback, $connection, new Request($request));
       });
     });
