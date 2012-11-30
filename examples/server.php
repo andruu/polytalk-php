@@ -20,6 +20,7 @@ class Test {
 }
 
 $server = new Polytalk\Server(['port' => 9090]);
+echo "PHP Server running on port 9090. PID=" . posix_getpid() . "\n";
 $server->run(function ($connection, $request) use ($server) {
   $response = $server->call($request);
   $server->push($connection, $response);

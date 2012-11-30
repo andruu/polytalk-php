@@ -6,7 +6,7 @@ Polytalk currently supports PHP, Node.js and Ruby.
 
 ## Protocol
 
-The protocol is a simple language agnostic JSON object containing the channel, class, method and arguments. It will then return an response as either a string or JSON object.
+The protocol is a simple language agnostic JSON object containing the class, method and arguments. It will then return an response as either a string or JSON object.
 
 Key          | Value
 ------------ | ------------- 
